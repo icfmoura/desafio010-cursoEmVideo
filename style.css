@@ -28,12 +28,15 @@ body {
     background-color:var(--cor1);
 }
 
+/* Header ------------------------------------------------------*/
+
 header {
     font-family: var(--fonte-padrao);
     background-image: linear-gradient(to top, var(--cor4), var(--cor2));
     display: flex;
     flex-direction: column;
     text-align: center;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.128);
 }
 
 header h1 {
@@ -42,7 +45,7 @@ header h1 {
     font-size: 50px;
     padding-top: 30px;
     color: white;
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.415);
 }
 
 header h4 {
@@ -52,14 +55,14 @@ header h4 {
     padding: 25px;
     color: white;
     align-self: center;
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.415);
 }
 
-header nav {
+nav {
     padding-bottom: 5px;
 }
 
-header nav a {
+nav a {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
@@ -68,7 +71,7 @@ header nav a {
     margin: 2px;
 }
 
-header nav a:hover {
+nav a:hover {
     background-color: var(--cor0);
     color: black;
     
@@ -77,8 +80,11 @@ header nav a:hover {
     
     margin: 2px;
     padding: 3px;
-    border-radius: 3px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
 }
+
+/* Corpo ------------------------------------------------------*/
 
 .corpo {
     background-color: rgb(248, 246, 246);
@@ -87,6 +93,7 @@ header nav a:hover {
     min-width: 280px;
     max-width: 800px;
     margin: auto;
+    margin-bottom: 20px;
 
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -103,12 +110,12 @@ header nav a:hover {
     font-weight: 400;
     font-size: 28px;
     padding: 20px;
-    align-self: start;
 }
 
 .corpo .texto {
     margin: 0px 20px;
     text-indent: 30px;
+    line-height: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin: 20px;
@@ -119,16 +126,39 @@ header nav a:hover {
     font-family: var(--fonte-android);
     font-size: 20px;
     font-weight: 300;
-    background-image: linear-gradient(to right, var(--cor1), rgb(255, 255, 255));
     color: var(--cor40);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
     padding: 1px 10px;
-    margin: 20px;
+    margin: 20px 10px 0px 10px;
     align-self: start;
     width: 92.7%;
 }
 
 .corpo .perfil {
     width: 100%;
+}
+
+.corpo strong {
+    color: var(--cor3);
+}
+
+.corpo a {
+    font-weight: bold;
+    text-decoration: none;
+    color:var(--cor5);
+    background-color:var(--cor1);
+    
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.corpo a:hover {
+    color: var(--cor2);
+    background-color: var(--cor4);
+}
+
+#droid {
+    max-width: 320px;
 }
 
 .video {
@@ -156,14 +186,15 @@ header nav a:hover {
 }
 
 #table .texto {
-    padding: 10px 0px;
+    padding: 5px 0px;
     text-align: justify;
 }
 
 #table #lista {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding-left: 20px;
+    font-weight: bold;
 }
 
 #table span {
@@ -171,9 +202,10 @@ header nav a:hover {
 }
 
 #ultimo {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
 }
+
+/* Footer ------------------------------------------------------*/
 
 footer {
     background-color: black;
@@ -201,4 +233,3 @@ footer a:hover {
     padding: 5px;
     border-radius: 5px;
 }
-
